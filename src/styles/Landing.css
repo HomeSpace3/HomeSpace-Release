@@ -1,0 +1,140 @@
+.landing-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.landing-section-1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    flex-direction: column;
+}
+
+.landing-welcome {
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+    font-size: 35px;
+    margin: 1em 0;
+}
+
+.landing-subtext {
+    width: 60%;
+    font-size: 16px;
+    margin-top: -1.5em;
+    margin-bottom: 1em;
+}
+
+@media (max-width: 640px) {
+    .landing-welcome {
+        font-size: 15px;
+    }
+    .landing-subtext {
+        width: 60%;
+        font-size: 7px;
+        margin-top: -1.5em;
+        margin-bottom: 2em;
+    }
+  }
+
+.landing-welcome-blue {
+    color: #347DC1;
+}
+
+.landing-device {
+    width: 50%;
+}
+
+.landing-section-2{
+    background-color: #F6F8F9;
+}
+
+.landing-about-title {
+    font-size: 35px;
+    margin-bottom: 1em;
+}
+
+.landing-about-listitem{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    font-size: 27px;
+    align-items: center;
+    opacity: 0.5;
+}
+
+.landing-about-text {
+    margin: 6em;
+}
+
+@media (max-width: 640px) {
+    .landing-about-title {
+        font-size: 16px;
+    }
+    
+    .landing-about-listitem{
+        display: flex;
+        flex-direction: row;
+        gap: 0.5em;
+        font-size: 12px;
+    }
+
+    .landing-check {
+        height: 1em;
+    }
+
+    .landing-about-text {
+        margin: 3em;
+    }
+}
+
+.landing-section-3{
+    background-color: #F6F8F9;
+}
+
+.landing-features {
+    width: 100%;
+}
+
+.landing-learn {
+    width: 80%;
+    margin: 5em;
+}
+
+.landing-section-4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-footer {
+    height: 10em;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    border-top: 0.7px solid grey;
+}
+
+@media (max-width: 640px) {
+
+    footer {
+        height: 7em;
+    }
+
+    .landing-footer {
+        display: flex;
+        gap: 14px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    #landing-icons {
+        width: 16%;
+    }
+}

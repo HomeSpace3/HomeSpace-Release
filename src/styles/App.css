@@ -1,0 +1,132 @@
+.app-container {
+  min-height: 100vh;
+  background-color: #FFF;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 5px; /* Adjust based on your header height */
+}
+
+.content-area {
+  flex-grow: 1;
+  overflow-y: auto;
+  height: calc(100vh - 60px); /* Adjust for header height */
+}
+
+/* JoyrideStyles.css */
+
+/* Overlay background */
+.joyride-overlay {
+  background-color: rgba(0, 0, 0, 0.6) !important; /* Darker overlay for better focus */
+  backdrop-filter: blur(3px); /* Add a subtle blur effect to the background */
+}
+
+/* Tooltip container */
+.joyride-tooltip {
+  background-color: #ffffff !important; /* White background for the tooltip */
+  border-radius: 12px !important; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important; /* Subtle shadow for depth */
+  padding: 20px !important; /* More padding for a spacious feel */
+  max-width: 350px !important; /* Limit the width for readability */
+  font-family: 'Inter', sans-serif !important; /* Modern font (you can replace with your preferred font) */
+}
+
+/* Tooltip content */
+.joyride-tooltip__content {
+  color: #333 !important; /* Dark text for readability */
+  font-size: 16px !important; /* Slightly larger text */
+  line-height: 1.5 !important; /* Better line spacing */
+}
+
+/* Header (used for the intro step) */
+.joyride-tooltip__header {
+  font-size: 20px !important; /* Larger header for the intro step */
+  font-weight: 600 !important; /* Bold header */
+  color: #347DC1 !important; /* A vibrant blue color for the header */
+  border-bottom: 1px solid #e0e0e0 !important; /* Subtle divider */
+  padding-bottom: 10px !important;
+  margin-bottom: 15px !important;
+}
+
+/* Buttons */
+.joyride-tooltip__button--primary {
+  background-color: #347DC1 !important; /* Vibrant blue for the "Next" button */
+  color: #ffffff !important;
+  border-radius: 8px !important;
+  padding: 10px 20px !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  transition: background-color 0.3s ease !important;
+}
+
+.joyride-tooltip__button--primary:hover {
+  background-color: #0056b3 !important; /* Darker blue on hover */
+}
+
+.joyride-tooltip__button--secondary {
+  color: #666 !important; /* Gray for the "Skip" button */
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  transition: color 0.3s ease !important;
+}
+
+.joyride-tooltip__button--secondary:hover {
+  color: #333 !important; /* Darker gray on hover */
+}
+
+/* Beacon (the pulsing dot that highlights the target) */
+.joyride-beacon {
+  background-color: #347DC1 !important; /* Match the beacon color to the theme */
+}
+
+.joyride-beacon__inner {
+  background-color: #347DC1 !important;
+}
+
+.joyride-beacon__outer {
+  border-color: #347DC1 !important;
+  opacity: 0.3 !important;
+}
+
+/* Close button */
+.joyride-tooltip__close {
+  color: #666 !important;
+  transition: color 0.3s ease !important;
+}
+
+.joyride-tooltip__close:hover {
+  color: #333 !important;
+}
+
+/* Progress indicator (optional, if you enable showProgress in Joyride) */
+.joyride-tooltip__footer {
+  border-top: 1px solid #e0e0e0 !important;
+  padding-top: 15px !important;
+  margin-top: 15px !important;
+}
+
+/* Center the intro step */
+.joyride-tooltip--standalone {
+  text-align: center !important;
+}
+
+/* Add a subtle animation for the tooltip appearance */
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.joyride-tooltip {
+  animation: fadeInScale 
+  
+  0.3s ease forwards !important;
+}

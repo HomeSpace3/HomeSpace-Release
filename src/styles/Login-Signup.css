@@ -1,0 +1,387 @@
+.details {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .input-group {
+    flex: 1;
+  }
+  
+  .details label {
+    display: block;
+    width: 100%;
+  }
+  
+  .details .input-blue {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    height: 35px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    font-size: 0.9rem;
+  
+  }
+  
+  .input-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .input-blue {
+    width: 100%;
+    padding: 10px; 
+    margin-top: 10px;
+    height: 35px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    font-size: 0.9rem;
+  }
+  
+  .input-blue:focus {
+    border: 1px solid #347DC1;
+    box-shadow: 0 0 8px rgba(0, 120, 215, 0.3); 
+    outline: none; /* Remove default outline */
+  }
+  
+  .remember-me {
+    display: flex;
+    align-items: center;
+  }
+  
+  input[type="checkbox"] {
+    margin: 0 8px 0 0; /* Adjust as needed */
+    vertical-align: middle; /* Aligns checkbox vertically */
+    cursor: pointer;
+  }
+  
+  .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .forgot-password {
+    font-style: italic;
+    color: #347DC1;
+    font-size: 1rem;
+  }
+  
+  .forgot-password:hover {
+    color: #06539A;
+  }
+  
+  .modal form {
+    margin-top: 30px;
+    font-size: 1.1rem;
+  }
+  
+  .modal-content {
+    position: top;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button {
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px 20px;
+  }
+  
+  /* Overlay dim effect */
+  .dim-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 5; /* Below modal but above everything else */
+  }
+
+  .header.dimmed {
+  backdrop-filter: blur(5px); /* Optional: Blur effect */
+  transition: background 0.3s ease;
+  z-index: 10; /* Keep it above the overlay */
+}
+  
+  .dimmed::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+  
+  .submit {
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(135deg, #7CABD7 0%, #2A6BA7 100%);
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+    margin-top: 25px;
+  }
+  
+  .submit:hover {
+    background: linear-gradient(135deg, #2A6BA7 0%, #7CABD7 100%);
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.4);
+  }
+  
+  .submit:active {
+    transform: scale(0.98);
+  }
+  
+  .separator {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .separator-line {
+    flex: 1;
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+  }
+  
+  .separator-text {
+    margin: 0 10px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .google-login {
+    width: 90%;
+    height: 50px;
+    border-radius: 8px;
+    border: 1.5px solid #347DC1; /* Correctly define the border */
+    background-color: white;
+    color: #347DC1;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block; /* Ensure it is a block element */
+    margin-left: auto; /* Center align */
+    margin-right: auto; /* Center align */
+  }
+  
+  .google-login:hover {
+    background-color: rgba(182, 181, 181, 0.2);
+    transform: scale(1.03);
+  }
+  
+  .google-login:active {
+    transform: scale(0.98);
+  }
+  
+  .signup-link {
+    margin-top:24px;
+    text-align: center;
+    font-size: smaller;
+    font-weight: 300;
+    white-space: nowrap; 
+  }
+  
+  .signup-link a {
+    color: #347DC1;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  .signup-link a:hover {
+    color: #06539A;
+  }
+  
+  .first {
+    font-weight: 300;
+    margin-bottom: 5px;
+  }
+  
+  .second {
+    font-weight: 500;
+    color: #347DC1;
+    font-style: italic;
+  }
+  
+  .text-space {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .modal-back-button {
+    display: block;
+    position: absolute;
+    left: 20px;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px; 
+  }
+  
+  .something {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust gap to create space */
+  }
+  
+  .step2 {
+    margin-left: 20px;
+    font-weight: 500;
+    color: #347DC1;
+  }
+  
+  .details .input-error {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    height: 35px;
+    border-radius: 8px;
+    border: 1px solid red;
+    font-size: 0.9rem;
+  }
+  
+  .input-error {
+    width: 100%;
+    padding: 10px; 
+    margin-top: 10px;
+    height: 35px;
+    border-radius: 8px;
+    border: 1px solid red;
+    font-size: 0.9rem;
+  }
+  
+  .input-error:focus {
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.3); 
+    outline: none; /* Remove default outline */
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    font-style: italic;
+  }
+  
+  small {
+    font-size: 0.85rem;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    text-align: left;
+    display: block; /* Ensure it takes full width */
+    margin: 40px auto 0; /* Center align with margin */
+    width: 100%; /* Ensure it takes full width */
+  }
+  
+  small a {
+    color: #347DC1;
+  }
+  
+  .forgot-pass-text {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: rgb(0, 0, 0, 0.5)
+  }
+
+  .password-toggle {
+    position: absolute;
+    right: 1px;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(0, 0, 0, 0.5);
+}
+
+.blue-password-toggle {
+  position: absolute;
+  right: 1px;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color:#347DC1;
+}
+
+/* Hide default password toggle (Chrome, Edge) */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear,
+input[type="password"]::-webkit-credentials-auto-fill-button,
+input[type="password"]::-webkit-clear-button,
+input[type="password"]::-webkit-password-toggle {
+    display: none !important;
+    pointer-events: none;
+}
+
+.authentication-text {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.authentication-title {
+  text-align: center;
+  flex: 1;
+  font-size: 1.4rem; /* Increased font size */
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #347DC1;
+}
+
+.otp-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.otp-container input {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.otp-container input:focus {
+  border: 1px solid #347DC1;
+  box-shadow: 0 0 8px rgba(0, 120, 215, 0.3);
+  outline: none; /* Remove default outline */
+}
+
+.authentication-error-message {
+  color: red;
+  /* font-size: 1rem; */
+  margin-top: 30px;
+  font-style: italic;
+  text-align: center;
+}

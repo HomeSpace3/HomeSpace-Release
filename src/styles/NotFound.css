@@ -1,0 +1,41 @@
+.notfound-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 80px); /* Subtract Header Height */
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  overflow: hidden; /* No extra scroll */
+}
+
+.notfound-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to right, #2983cd, #588cbc, #92a8bc);
+  -webkit-background-clip: text; 
+  color: transparent;
+}
+
+.notfound-description {
+  font-size: 1.25rem;
+  color: black;
+  margin-bottom: 24px;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full Height */
+  overflow: hidden; /* Prevent scroll from outer container */
+}
+
+.main-content {
+  flex: 1; /* Push Footer Down Automatically */
+  overflow-y: auto; /* Add scroll only if content exceeds screen */
+}

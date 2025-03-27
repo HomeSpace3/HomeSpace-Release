@@ -1,0 +1,146 @@
+.home-info-group {
+        padding: 20px;
+        border-radius: 16px;
+        background-color: white;
+        margin-bottom: 20px;
+        /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+        /* border: 2px solid rgba(59, 130, 246, 0.6); */
+}
+
+.home-notifs-group {
+  padding: 30px;
+  border-radius: 16px;
+  /* background-color: rgb(236, 250, 215); */
+}
+
+.settings-container {
+  display: flex;
+  align-items: first baseline;
+
+}
+
+.settings-content {
+  width: 1000px;
+  margin: 2rem auto;
+}
+
+.settings-sidebar {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.active {
+  background-color: #fff;
+}
+
+.home-settings {
+  /* max-width: 1000px;
+  margin: 2rem auto; */
+    padding: 20px;
+    /* max-width: 600px; */
+    margin: auto;
+    border-radius: 12px;
+    /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .home-settings h1 {
+    text-align: center;
+    padding: 20px 0px 0px 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+  }
+
+  .settings-group {
+    margin-bottom: 20px;
+  }
+
+  .settings-group-date {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .settings-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+
+  .settings-group-date label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+
+  .settings-group input[type="text"],
+  .settings-group input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+  }
+  
+  .settings-group div {
+    margin-top: 10px;
+  }
+  
+  .save-btn, .delete-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .save-btn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .save-btn:hover {
+    background-color: #45a049;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .delete-btn {
+    background-color: #e74c3c;
+    color: white;
+    width: 50%;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  .home-id-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    white-space: nowrap;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+  }
+  
+  tr:hover {
+    background: #f9fafc;
+  }
+
+  tr {
+    border: 1px solid #ccc;
+    background-color: rgba(0, 0, 0, 0.05);
+  }

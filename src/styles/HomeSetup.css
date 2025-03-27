@@ -1,0 +1,208 @@
+.home-setup-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px; /* Increased padding */
+}
+
+.home-setup-card {
+  background-color: #ffffff;
+  padding: 32px; /* Increased padding */
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px; /* Increased max-width */
+  width: 100%;
+}
+
+.home-setup-title {
+  text-align: center;
+  flex: 1;
+  font-size: 1.4rem; /* Increased font size */
+  font-weight: 600;
+  color: #347DC1;
+}
+
+.home-setup-description {
+  text-align: center;
+  font-size: 1rem; /* Increased font size */
+  color: #6b7280;
+  margin-bottom: 24px; /* Increased margin */
+  margin-top: 24px;
+}
+
+.home-setup-option {
+  display: flex;
+  align-items: center;
+  padding: 20px; /* Increased padding */
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.home-setup-option:hover {
+  background-color: #f0f4f8; /* Add hover effect */
+}
+
+.home-setup-option.selected {
+  border-color: #347DC1;
+  background-color: #f0f7ff;
+}
+
+.home-setup-option-icon {
+  width: 32px; /* Increased icon size */
+  height: 32px; /* Increased icon size */
+}
+
+.home-setup-option-content {
+  margin-left: 20px; /* Increased margin */
+}
+
+.home-setup-option-title {
+  font-size: 1.25rem; /* Increased font size */
+  font-weight: 500;
+  color: #111827;
+}
+
+.home-setup-option-description {
+  font-size: 1rem; /* Increased font size */
+  color: #6b7280;
+}
+
+.home-setup-button {
+  width: 100%;
+  margin-top: 32px; /* Increased margin */
+}
+
+.home-setup-exit {
+    display: flex;
+    /* justify-content: space-between; */
+    position: relative;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    gap:10px;
+    justify-content: center;
+    text-align: center;
+    font-size: smaller;
+    font-weight: 300;
+    white-space: nowrap;
+    width: 100%;
+    padding: 20px 20px; /* Add padding for spacing */
+}
+      
+.home-setup-exit a {
+        color: #347DC1;
+        text-decoration: underline;
+        font-weight: bold;
+}
+.home-setup-exit a:hover {
+        color: #347DC1;
+}
+
+.home-back-button {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px; /* Adjust margin to create space */
+}
+
+.home-setup-header {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center content horizontally */
+  gap: 10px; /* Space between arrow and title */
+  position: relative; /* To allow absolute positioning */
+  margin-bottom: 3rem;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.home-setup-input {
+  width: 100%;
+  padding: 10px; 
+  margin-top: 10px;
+  height: 35px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  font-size: 0.9rem;
+}
+
+.home-setup-input-blue {
+  width: 100%;
+  padding: 10px; 
+  margin-top: 10px;
+  height: 35px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 120, 215, 0.1); 
+  font-size: 0.9rem;
+}
+
+.home-setup-input-error {
+  width: 100%;
+  padding: 10px; 
+  margin-top: 10px;
+  height: 35px;
+  border-radius: 8px;
+  border: 1px solid red;
+  font-size: 0.9rem;
+}
+
+.home-setup-input-error:focus {
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.3); 
+  outline: none; /* Remove default outline */
+}
+
+.home-setup-input:focus {
+  border: 1px solid #347DC1;
+  box-shadow: 0 0 8px rgba(0, 120, 215, 0.3); 
+  outline: none; /* Remove default outline */
+}
+
+.copy-button {
+  color: #347DC1;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.copy-button:hover {
+  color: #133680;
+}
+
+
+.line-separator {
+  width: 100%;
+  height: 1px;
+  border: 1px solid #dce0e5;
+  margin: 25px 0 15px;
+}
+
+.home-success {
+  text-align: left;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+.home-code-box {
+  text-align: center;
+  margin-top: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #f9fafb;
+  font-weight: 500;
+  color: #111827;
+}
+
+.age-error {
+  text-align: center;
+  font-size: 1rem; /* Increased font size */
+  color: red;
+  margin-bottom: 24px; /* Increased margin */
+  margin-top: 15px;
+}

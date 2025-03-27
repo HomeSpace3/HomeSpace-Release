@@ -1,0 +1,69 @@
+.slider-container {
+    width: 100%;
+    max-width: 600px; 
+    margin: 0 auto;
+    position: relative;
+    aspect-ratio: 1;
+  }
+  
+  .slider-svg {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+  }
+  
+  .background-arc {
+    fill: none;
+    stroke: #e5e7eb;
+    stroke-linecap: round;
+  }
+  
+  .active-arc {
+    fill: none;
+    stroke-linecap: round;
+  }
+  
+  .center-circle {
+    fill: white;
+  }
+  
+  .temperature-text {
+    font-size: 4rem; 
+    font-weight: 500;
+    fill: #347DC1;
+  }
+  
+  .handle {
+    fill: white;
+    stroke: #D9D9D9;
+    stroke-width: 3;
+    cursor: pointer;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  }
+  .controls {
+    position: absolute;
+    left: 50%;
+    bottom:20%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 10px;
+  }
+  
+  .control-button {
+    background: hsl(209, 58%, 48%);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 30px;
+    border-radius: 20%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    transition: background-color 150ms;
+  }
+  
+  .control-button:hover {
+    background-color: #2563eb;
+  }
